@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="body">
+
+        <section class="interface">
+            <h1 id="calcs"></h1>
+        </section>
+
+        <section class="symbolsAndNumbers">
+            
+            <div class="line firstLine">
+                <p id="ac" onclick="clean()">AC</p>
+                <p id="percentage" onclick="percentage('%')">%</p>
+                <p id="<" onclick="back()"> << </p>
+                
+                <p id="/" class="operation" onclick="insert('/')">/</p>
+            </div>
+
+            <div class="line secondLine">
+                <p id="7" class="number" onclick="insert('7')">7</p>
+                <p id="8" class="number" onclick="insert('8')">8</p>
+                <p id="9" class="number" onclick="insert('9')">9</p>
+                <p id="x" class="operation" onclick="insert('x')">x</p>
+            </div>
+
+            <div class="line thirdLine">
+                <p id="4" class="number" onclick="insert('4')">4</p>
+                <p id="5" class="number" onclick="insert('5')">5</p>
+                <p id="6" class="number" onclick="insert('6')">6</p>
+                <p id="-" class="operation" onclick="insert('-')">-</p>
+            </div>
+
+            <div class="line fourthLine">
+                <p id="1" class="number" onclick="insert('1')">1</p>
+                <p id="2" class="number" onclick="insert('2')">2</p>
+                <p id="3" class="number" onclick="insert('3')">3</p>
+                <p id="+" class="operation" onclick="insert('+')">+</p>
+            </div>
+
+            <div class="line fifthLine">
+                <p id="zero" onclick="insert('0')">0</p>
+                <p id="." onclick="insert('.')">.</p>
+                <p id="=" class="operation" onclick="calcular()">=</p>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

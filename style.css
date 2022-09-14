@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+div.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section.interface,
+div.line {
+    display: flex;
+}
+
+section.interface {
+    display: flex;
+    background-color: black;
+    width: 20.1rem;
+    height: 5rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+section.interface h1 {
+    color: white;
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+
+div.line p {
+    border: 1px solid black;
+    width: 4.9rem;
+    padding: 1.5rem 0;
+    text-align: center;
+    background-color: rgb(172, 171, 171);
+    cursor: pointer;
+}
+
+div.line > p:hover{
+    background-color: rgba(89, 88, 88, 0.626);
+}
+
+div.line .operation {
+    background-color: rgb(248, 170, 26);
+}
+
+div.line > .operation:hover {
+    background-color: rgb(234, 152, 0);
+}
+
+div.firstLine > p{
+    background-color: rgb(219, 209, 193);
+}
+
+div.firstLine > p:hover{
+    background-color: rgb(190, 177, 157);
+}
+
+div.line #zero {
+    width: 9.925rem;
+}
